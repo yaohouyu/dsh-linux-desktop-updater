@@ -19,7 +19,7 @@ DeepSeek Harness Linux 桌面版补上「检查更新 / 一键更新」能力。
 
 ## 安装
 
-三种方式任选其一。
+两种方式任选其一。
 
 **1）从本地目录安装（开发/自用）**
 
@@ -31,12 +31,6 @@ plugin_manager install_bundle  target=/home/yaohouyu/桌面/dsh-plugins/dsh-linu
 
 ```bash
 dsh plugin --profile desktop add github:yaohouyu/dsh-linux-desktop-updater
-```
-
-**3）从 npm 安装**
-
-```bash
-dsh plugin --profile desktop add dsh-linux-desktop-updater
 ```
 
 安装后在 **设置 → 插件** 里能看到 `dsh-linux-desktop-updater`，并在 **设置 → 版本更新** 出现页面。
