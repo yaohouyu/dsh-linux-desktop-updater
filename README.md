@@ -123,30 +123,6 @@ plugin_manager remove_bundle  target=dsh-linux-desktop-updater
 
 下载缓存可手动删除：`rm -rf ~/.dsh/app-updater`。
 
-## 发布（GitHub / npm）
-
-- GitHub 仓库：<https://github.com/yaohouyu/dsh-linux-desktop-updater>
-- npm 包名：`dsh-linux-desktop-updater`
-
-```bash
-cd /home/yaohouyu/桌面/dsh-plugins/dsh-linux-desktop-updater
-
-# 1. 建仓并推送（需要已登录 GitHub CLI 或自行在网页建仓）
-git init -b main
-git add -A
-git commit -m "feat: initial release"
-gh repo create yaohouyu/dsh-linux-desktop-updater --public --source=. --push
-
-# 2. 发布到 npm（需要 npm 账号）
-npm login
-npm publish
-
-# 3. 可选：打 tag 触发 GitHub Actions 自动发布（需配置仓库 secret NPM_TOKEN）
-git tag v1.0.0 && git push origin v1.0.0
-```
-
-工作流在 `.github/workflows/publish.yml`，推 `v*` tag 时执行 `npm publish`。
-
 ## 说明
 
 - 只支持 Linux 桌面（`.deb`/`.rpm`）；macOS / Windows 官方包自带更新器，不需要本插件。
