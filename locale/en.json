@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "App Updates",
+    "description": "Checks the Linux desktop packages published by wenyinos/dsh-desktop-linux and installs a newer DeepSeek Harness version in one click."
+  }
+}

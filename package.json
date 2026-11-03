@@ -1,0 +1,62 @@
+{
+  "name": "dsh-linux-desktop-updater",
+  "version": "1.0.0",
+  "description": "One-click version check and update for the DeepSeek Harness Linux desktop package (deepseek-harness .deb/.rpm published by wenyinos/dsh-desktop-linux).",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-settings"
+      ],
+      "immediately": true
+    }
+  },
+  "license": "MIT",
+  "author": "terry.yao (https://github.com/yaohouyu)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yaohouyu/dsh-linux-desktop-updater.git"
+  },
+  "homepage": "https://github.com/yaohouyu/dsh-linux-desktop-updater#readme",
+  "bugs": {
+    "url": "https://github.com/yaohouyu/dsh-linux-desktop-updater/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "updater",
+    "linux",
+    "deb",
+    "rpm",
+    "desktop"
+  ],
+  "engines": {
+    "dsh": ">=0.2.1-rc.5 <0.3.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}

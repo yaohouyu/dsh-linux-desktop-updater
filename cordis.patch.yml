@@ -1,0 +1,5 @@
+# Bundle patch for the DeepSeek Harness Linux desktop updater.
+# Inserts one Host row that owns the update service, HTTP routes and agent tool.
+- insert:
+    - id: dsh-linux-desktop-updater
+      name: dsh-linux-desktop-updater

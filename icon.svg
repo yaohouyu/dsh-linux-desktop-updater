@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="App updates">
+  <defs>
+    <linearGradient id="updater-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3b6ef5"/>
+      <stop offset="1" stop-color="#1f9bd1"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#updater-bg)"/>
+  <path d="M32 15a17 17 0 1 1-12.02 4.98" fill="none" stroke="#ffffff" stroke-width="4.4" stroke-linecap="round"/>
+  <path d="M20.5 12.5v9h9" fill="none" stroke="#ffffff" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M32 25.5v15.5" fill="none" stroke="#ffffff" stroke-width="4.4" stroke-linecap="round"/>
+  <path d="M25.5 34.5 32 41l6.5-6.5" fill="none" stroke="#ffffff" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
