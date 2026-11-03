@@ -17,6 +17,14 @@ DeepSeek Harness Linux 桌面版补上「检查更新 / 一键更新」能力。
 - 授权失败时给出可复制的 `sudo apt install …` 手动命令；
 - 设置页提供环境自检（pkexec、PackageKit、dpkg、缓存目录、磁盘空间、桌面总线）。
 
+## 相关仓库与致谢
+
+- **Linux 安装包来源**（本插件只读取它的 GitHub Releases，不包含也不修改它的代码）：
+  [wenyinos/dsh-desktop-linux](https://github.com/wenyinos/dsh-desktop-linux)
+- **上游项目**：[deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness)
+- 本插件是独立的第三方工具，与上述仓库的维护者没有隶属关系；安装包未签名，
+  升级前请自行确认来源与版本。
+
 ## 安装
 
 两种方式任选其一。
